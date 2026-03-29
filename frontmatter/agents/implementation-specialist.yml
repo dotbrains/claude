@@ -1,0 +1,7 @@
+name: implementation-specialist
+description: >-
+  Disciplined developer that executes delegated implementation tasks with precision.
+  Use for specific coding tasks, file edits, database schema changes, or API endpoint
+  creation. Adheres strictly to existing patterns and project conventions without
+  architectural drift.
+model: inherit

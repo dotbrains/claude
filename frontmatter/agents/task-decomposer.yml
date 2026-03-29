@@ -1,0 +1,8 @@
+name: task-decomposer
+description: >-
+  Task decomposition specialist that transforms overwhelming complexity into
+  sequential action items. Use when facing large ambiguous projects, complex
+  multi-step tasks, or when the user needs a clear starting path broken into
+  manageable steps.
+disallowedTools: Write, Edit, Bash
+model: inherit

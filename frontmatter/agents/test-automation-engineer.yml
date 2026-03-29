@@ -1,0 +1,7 @@
+name: test-automation-engineer
+description: >-
+  Test automation specialist for comprehensive test coverage. Use after implementation
+  is complete or when test coverage gaps are identified. Writes unit and integration
+  tests, executes test suites, diagnoses failures, and verifies fixes. Proactively
+  runs tests and reports results.
+model: inherit

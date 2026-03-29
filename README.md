@@ -18,10 +18,12 @@ npm install -g @anthropic-ai/claude-code
 
 - `CLAUDE.md` — User-scope memory and instructions (read every session)
 - `settings.json` — User-scope settings (permissions, model, hooks, etc.)
-- `agents/` — Subagent definitions
+- `agents/` — Subagent definitions (assembled from shared + frontmatter)
 - `skills/` — Skill definitions (modular, each skill is a directory)
 - `commands/` — Custom slash-command definitions
 - `plans/` — Persistent plans
+- `shared/` — Shared AI config submodule ([dotbrains/shared-ai-config](https://github.com/dotbrains/shared-ai-config))
+- `frontmatter/` — Claude Code-specific YAML frontmatter for agents and skills
 
 ### Agents
 
@@ -47,13 +49,16 @@ npm install -g @anthropic-ai/claude-code
 The contents of this repository should be placed in your `$HOME`.
 
 ```bash
-git clone https://github.com/dotbrains/claude.git $HOME/.claude
+git clone --recursive https://github.com/dotbrains/claude.git $HOME/.claude
 ```
 
-If using submodules:
+## Shared Agent Definitions
+
+Agent and skill body content is shared with [OpenCode](https://github.com/dotbrains/opencode) via the [shared-ai-config](https://github.com/dotbrains/shared-ai-config) submodule. To update after shared content changes:
 
 ```bash
-git clone --recursive https://github.com/dotbrains/claude.git $HOME/.claude
+git submodule update --remote shared
+./shared/assemble.sh claude
 ```
 
 ## Extending with Submodules
@@ -61,9 +66,6 @@ git clone --recursive https://github.com/dotbrains/claude.git $HOME/.claude
 You can pull in shared agents, skills, or commands from external repositories:
 
 ```bash
-# Add a shared agent library
-git submodule add https://github.com/example/claude-agents.git agents/shared
-
 # Add shared skills
 git submodule add https://github.com/example/claude-skills.git skills/shared
 

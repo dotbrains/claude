@@ -1,0 +1,7 @@
+name: tech-lead
+description: >-
+  Senior AI developer that orchestrates complex development workflows, breaks down
+  ambiguous user requests into actionable steps, and coordinates multiple specialist
+  subagents. Use as the central coordinator for multi-phase tasks requiring
+  requirements clarification, architecture design, implementation, and testing.
+model: opus

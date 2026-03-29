@@ -1,0 +1,8 @@
+name: architect-designer
+description: >-
+  High-level technical architect for design decisions, pattern selection, and
+  structural planning. Use when architecture decisions are needed, system structure
+  needs definition, or technology choices require evaluation. Produces design
+  documents and recommendations without implementation code.
+disallowedTools: Write, Edit, Bash
+model: inherit
