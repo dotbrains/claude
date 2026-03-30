@@ -17,13 +17,14 @@ npm install -g @anthropic-ai/claude-code
 ## Contents
 
 - `CLAUDE.md` — User-scope memory and instructions (read every session)
-- `settings.json` — User-scope settings (permissions, model, hooks, etc.)
+- `settings.json` — User-scope settings (permissions, MCP servers, hooks, etc.)
 - `agents/` — Subagent definitions (assembled from shared + frontmatter)
 - `skills/` — Skill definitions (modular, each skill is a directory)
 - `commands/` — Custom slash-command definitions
 - `plans/` — Persistent plans
 - `shared/` — Shared AI config submodule ([dotbrains/shared-ai-config](https://github.com/dotbrains/shared-ai-config))
 - `frontmatter/` — Claude Code-specific YAML frontmatter for agents and skills
+- `PLUGINS.md` — External MCP servers and plugins ([details](PLUGINS.md))
 
 ### Agents
 
