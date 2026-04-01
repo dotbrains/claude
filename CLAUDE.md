@@ -19,6 +19,13 @@
 - Never force-push to `main` or `master`
 - Never commit secrets, `.env` files, or credential files
 
+## Commit Attribution
+
+- Do NOT add `Co-Authored-By:` lines to commits
+- Do NOT add `Generated with` or AI attribution footers to commits or PRs
+- Write commit messages exactly as a human developer would
+- Controlled via `attribution` setting in `settings.json` (currently empty)
+
 ## Communication Style
 
 - Be concise and direct

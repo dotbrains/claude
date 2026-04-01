@@ -25,6 +25,7 @@ npm install -g @anthropic-ai/claude-code
 - `shared/` — Shared AI config submodule ([dotbrains/shared-ai-config](https://github.com/dotbrains/shared-ai-config))
 - `frontmatter/` — Claude Code-specific YAML frontmatter for agents and skills
 - `PLUGINS.md` — External MCP servers and plugins ([details](PLUGINS.md))
+- `RULES.md` — Rule definitions and usage ([details](RULES.md))
 
 ### Agents
 
