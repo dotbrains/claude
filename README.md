@@ -46,6 +46,15 @@ npm install -g @anthropic-ai/claude-code
 | `explain-code` | Explain code with diagrams and analogies | `/explain-code` or automatic |
 | `pr-review` | Review a pull request thoroughly | `/pr-review <PR number>` |
 
+### Commands
+
+| Command | Purpose |
+|---|---|
+| `linear-issue` | Fetch a Linear issue by ID or identifier |
+| `linear-search` | Search Linear for issues, projects, or documents |
+| `notion-page` | Fetch a Notion page by ID |
+| `notion-search` | Search Notion for pages |
+
 ## Install This Config
 
 The contents of this repository should be placed in your `$HOME`.
@@ -74,6 +83,18 @@ git submodule add https://github.com/example/claude-skills.git skills/shared
 # Add community commands
 git submodule add https://github.com/example/claude-commands.git commands/shared
 ```
+
+## Fallback Commands (Notion + Linear)
+
+If your workspace blocks MCP OAuth flows, this config includes local fallback slash commands:
+
+- Notion: `commands/notion-search.md`, `commands/notion-page.md` (powered by `@dotbrains/notion-cli`)
+- Linear: `commands/linear-search.md`, `commands/linear-issue.md` (powered by `@dotbrains/linear-cli`)
+
+Setup and usage instructions are documented in `PLUGINS.md` under:
+
+- **Linear - Fallback: linear-cli (when MCP auth is blocked)**
+- **Notion - Fallback: notion-cli (when MCP auth is blocked)**
 
 ## License
 
