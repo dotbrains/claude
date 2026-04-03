@@ -14,6 +14,16 @@ fi
 # context-mode - MCP server (via npx, no install needed)
 echo "context-mode is configured via npx in settings.json (no install needed)"
 
+# superpowers - Complete software development workflow
+# Installed via Claude Code marketplace plugin
+echo "Installing superpowers (via marketplace plugin)..."
+echo "Run: /plugin install superpowers@claude-plugins-official"
+echo "Or search for 'superpowers' in the plugin marketplace"
+
+# get-shit-done - GSD workflow system
+echo "Installing get-shit-done..."
+npx get-shit-done-cc@latest --claude --global
+
 # linear-cli - fallback for Linear
 echo "Installing linear-cli..."
 npm config set @dotbrains:registry https://npm.pkg.github.com

@@ -72,6 +72,8 @@ After cloning, run the plugin installation script:
 ```
 
 This installs:
+- `superpowers` - Complete software development workflow (via marketplace plugin)
+- `get-shit-done` - GSD workflow system (via npx)
 - `@dotbrains/linear-cli` - Fallback CLI for Linear
 - `@dotbrains/notion-cli` - Fallback CLI for Notion
 
