@@ -2,6 +2,42 @@
 
 This document lists the external MCP servers and plugins used by this Claude Code configuration.
 
+## claude-hud
+
+**Type:** Claude Code Plugin (Marketplace)
+
+A statusline plugin that shows what's happening — context usage, active tools, running agents, and todo progress. Always visible below your input.
+
+- **Features:** Context bar, tool activity, agent tracking, todo progress, git status, session cost/duration
+- **Requirements:** Claude Code v1.0.80+, Node.js 18+ or Bun
+
+### Install
+
+```bash
+/plugin marketplace add jarrodwatts/claude-hud
+/plugin install claude-hud
+/reload-plugins
+```
+
+### Setup
+
+```bash
+/claude-hud:setup
+```
+
+Follow the guided flow to choose a preset (Full/Essential/Minimal) and customize your display.
+
+### Configure
+
+```bash
+/claude-hud:configure
+```
+
+### Requirements
+
+- Claude Code v1.0.80+
+- Node.js 18+ or Bun
+
 ## Linear
 
 **Type:** Remote MCP (OAuth)
