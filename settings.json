@@ -21,14 +21,19 @@
       "Read(./**/credentials.*)"
     ]
   },
-  "mcpServers": {
-    "context-mode": {
-      "command": "npx",
-      "args": ["-y", "context-mode"]
-    }
-  },
   "statusLine": {
     "type": "command",
     "command": "bash $HOME/.claude/statusline-command.sh"
-  }
+  },
+  "skipDangerousModePermissionPrompt": true,
+  "mcpServers": {
+    "context-mode": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "context-mode"
+      ]
+    }
+  },
+  "model": "opus"
 }
