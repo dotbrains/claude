@@ -46,15 +46,6 @@ npm install -g @anthropic-ai/claude-code
 | `explain-code` | Explain code with diagrams and analogies | `/explain-code` or automatic |
 | `pr-review` | Review a pull request thoroughly | `/pr-review <PR number>` |
 
-### Commands
-
-| Command | Purpose |
-|---|---|
-| `linear-issue` | Fetch a Linear issue by ID or identifier |
-| `linear-search` | Search Linear for issues, projects, or documents |
-| `notion-page` | Fetch a Notion page by ID |
-| `notion-search` | Search Notion for pages |
-
 ## Install This Config
 
 The contents of this repository should be placed in your `$HOME`.
@@ -74,8 +65,6 @@ After cloning, run the plugin installation script:
 This installs:
 - `superpowers` - Complete software development workflow (via marketplace plugin)
 - `get-shit-done` - GSD workflow system (via npx)
-- `@dotbrains/linear-cli` - Fallback CLI for Linear
-- `@dotbrains/notion-cli` - Fallback CLI for Notion
 
 ## Shared Agent Definitions
 
