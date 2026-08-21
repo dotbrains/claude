@@ -98,18 +98,6 @@ git submodule add https://github.com/example/claude-skills.git skills/shared
 git submodule add https://github.com/example/claude-commands.git commands/shared
 ```
 
-## Fallback Commands (Notion + Linear)
-
-If your workspace blocks MCP OAuth flows, this config includes local fallback slash commands:
-
-- Notion: `commands/notion-search.md`, `commands/notion-page.md` (powered by `@dotbrains/notion-cli`)
-- Linear: `commands/linear-search.md`, `commands/linear-issue.md` (powered by `@dotbrains/linear-cli`)
-
-Setup and usage instructions are documented in `PLUGINS.md` under:
-
-- **Linear - Fallback: linear-cli (when MCP auth is blocked)**
-- **Notion - Fallback: notion-cli (when MCP auth is blocked)**
-
 ## License
 
 This project is licensed under the [PolyForm Shield License 1.0.0](https://polyformproject.org/licenses/shield/1.0.0/) -- see [LICENSE](LICENSE) for details.
