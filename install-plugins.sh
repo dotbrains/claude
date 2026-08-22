@@ -24,6 +24,11 @@ echo "Or search for 'superpowers' in the plugin marketplace"
 echo "Installing get-shit-done..."
 npx get-shit-done-cc@latest --claude --global
 
+# ntn - Official Notion CLI, fallback for Notion when MCP auth is blocked
+echo "Installing ntn (official Notion CLI)..."
+npm install -g ntn
+echo "Run 'ntn login' to authorize your Notion workspace."
+
 echo ""
 echo "Done! Restart Claude Code to load the plugins."
 echo ""

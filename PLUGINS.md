@@ -132,6 +132,58 @@ Or search for "superpowers" in the plugin marketplace.
 
 Verify by asking: "Tell me about your superpowers"
 
+## Notion CLI (ntn)
+
+**Repository:** [Official Notion CLI](https://developers.notion.com/cli/get-started/overview)
+
+The official Notion CLI. Used here as a fallback for the Notion MCP server when your workspace blocks MCP OAuth flows.
+
+### Install
+
+```bash
+npm install -g ntn
+```
+
+Or via the official install script:
+
+```bash
+curl -fsSL https://ntn.dev | bash
+```
+
+### Setup
+
+```bash
+ntn login
+```
+
+Follow the browser prompt to authorize your workspace. Credentials are stored in your system keychain.
+
+### Usage
+
+- Search: `ntn api v1/search query="..." page_size==20`
+- Fetch a page: `ntn pages get <page-id> --json`
+
+Used by the `commands/notion-search.md` and `commands/notion-page.md` fallback commands.
+
+### Verify
+
+```bash
+ntn --version
+ntn doctor
+```
+
+### Upgrade
+
+```bash
+npm update -g ntn
+```
+
+Or, if installed via the script:
+
+```bash
+ntn update
+```
+
 ## Get Shit Done (GSD)
 
 **Repository:** [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done)

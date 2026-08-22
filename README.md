@@ -46,6 +46,13 @@ npm install -g @anthropic-ai/claude-code
 | `explain-code` | Explain code with diagrams and analogies | `/explain-code` or automatic |
 | `pr-review` | Review a pull request thoroughly | `/pr-review <PR number>` |
 
+### Commands
+
+| Command | Purpose |
+|---|---|
+| `notion-page` | Fetch a Notion page by ID |
+| `notion-search` | Search Notion for pages |
+
 ## Install This Config
 
 The contents of this repository should be placed in your `$HOME`.
@@ -65,6 +72,7 @@ After cloning, run the plugin installation script:
 This installs:
 - `superpowers` - Complete software development workflow (via marketplace plugin)
 - `get-shit-done` - GSD workflow system (via npx)
+- [`ntn`](https://developers.notion.com/cli/get-started/overview) - Official Notion CLI, fallback for Notion
 
 ## Shared Agent Definitions
 
@@ -86,6 +94,16 @@ git submodule add https://github.com/example/claude-skills.git skills/shared
 # Add community commands
 git submodule add https://github.com/example/claude-commands.git commands/shared
 ```
+
+## Fallback Commands (Notion)
+
+If your workspace blocks MCP OAuth flows, this config includes local fallback slash commands:
+
+- Notion: `commands/notion-search.md`, `commands/notion-page.md` (powered by [`ntn`](https://developers.notion.com/cli/get-started/overview), the official Notion CLI)
+
+Setup and usage instructions are documented in `PLUGINS.md` under:
+
+- **Notion CLI (ntn)**
 
 ## License
 
